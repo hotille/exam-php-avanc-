@@ -22,7 +22,7 @@ class Conducteur extends Db
             throw new Exception('Le champ est vide.');
         }
 
-        $this->title = $prenom;
+        $this->prenom = $prenom;
         return $this;
     }
 
@@ -54,8 +54,8 @@ class Conducteur extends Db
     public function save()
     {
         $data = [
-            "prenom"    => $this->getNom(),
-            "nom"  => $this->getPrenom(),
+            "prenom"    => $this->getPrenom(),
+            "nom"  => $this->getNom(),
         ];
         //if ($this->id > 0) return $this->update();
         $nouvelId = Db::dbCreate(self::TABLE_NAME, $data);

@@ -10,15 +10,11 @@ class ConducteursController
         view('conducteurs.list', compact('conducteurs'));
     }
 
-    // Route: GET courses/add
-    public function add()
-    {
-        view('conducteurs.add');
-    }
-
+ 
     // Route: POST courses/add
     public function save()
     {
+
         $conducteur = new Conducteur;
         $conducteur->setNom($_POST['nom']);
         $conducteur->setPrenom($_POST['prenom']);

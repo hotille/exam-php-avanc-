@@ -17,10 +17,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-light" href="">Conducteur</a>
+          <a class="nav-link text-light" href="http://localhost/cours/php-exam-avance//conducteurs">Conducteur</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="">Véhicule</a>
+          <a class="nav-link text-light" href="http://localhost/cours/php-exam-avance//vehicules">Véhicule</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light" href="">Association</a>
@@ -28,7 +28,7 @@
       </ul>
     </div>
   </nav>
-  
+
   <div class="container">
     <div class="row mt-3">
       <div class="col-12">

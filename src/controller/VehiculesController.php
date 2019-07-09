@@ -10,11 +10,6 @@ class VehiculesController
         view('vehicules.list', compact('vehicules'));
     }
 
-    // Route: GET courses/add
-    public function add()
-    {
-        view('vehicules.add');
-    }
 
     // Route: POST courses/add
     public function save()
