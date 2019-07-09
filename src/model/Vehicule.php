@@ -111,4 +111,43 @@ class Vehicule extends Db
         return;
     }
 
+
+    public static function findAll()
+    {
+        $data = Db::dbFind(self::TABLE_NAME);
+
+        $vehicules = [];
+        foreach ($data as $d) {
+            $vehicule = new Vehicule;
+            $vehicule->setId($d['id']);
+            $vehicule->setMarque($d['marque']);
+            $vehicule->setModele($d['modele']);
+            $vehicule->setCouleur($d['couleur']);
+            $vehicule->setImmatriculation($d['immatriculation']);
+
+            $vehicules[] = $vehicule;
+        }
+
+        return $vehicules;
+    }
+
+    public static function findOne(int $id)
+    {
+        $request = [
+            ['id', '=', $id]
+        ];
+        $element = Db::dbFind(self::TABLE_NAME, $request);
+        if (count($element) > 0) $element = $element[0];
+        else return;
+
+        $vehicule = new Vehicule;
+        $vehicule->setId($element['id']);
+        $vehicule->setMarque($element['marque']);
+        $vehicule->setModele($element['modele']);
+        $vehicule->setCouleur($element['couleur']);
+        $vehicule->setImmatriculation($element['immatriculation']);
+
+        return $vehicule;
+    }
 }
+

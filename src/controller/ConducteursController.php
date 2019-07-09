@@ -45,18 +45,4 @@ class ConducteursController
         redirectTo('conducteurs');
     }
 
-    // Route: GET courses/$id/delete
-    public function delete($id)
-    {
-        $conducteur = Conducteur::findOne($id);
-        $conducteur->delete();
-
-        redirectTo('conducteurs');
-    }
-
-    // Route: GET courses/$id
-    public function show($id)
-    {
-        view('conducteurs.show');
-    }
 }

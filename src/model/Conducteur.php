@@ -113,7 +113,7 @@ class Conducteur extends Db
         if (count($element) > 0) $element = $element[0];
         else return;
 
-        $conducteur = new Course;
+        $conducteur = new Conducteur;
         $conducteur->setId($element['id']);
         $conducteur->setPrenom($element['prenom']);
         $conducteur->setNom($element['nom']);
