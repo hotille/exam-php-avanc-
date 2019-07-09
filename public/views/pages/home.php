@@ -1,11 +1,11 @@
 <?php ob_start(); ?>
 
-<h1>UTC_VALERE Concessionnaire</h1>
+<h1>UTC_VALERE Concessionnaire</h1><br><br>
 
 <ul>
-    <li><a href="<?= url('') ?>">Conducteur</li>
-    <li><a href="<?= url('') ?>">Association_vehicule_conducteur</li>
-    <li><a href="<?= url('') ?>">Vehicule</li>
+    <li><a href="<?= url('conducteurs') ?>">Conducteur</li>
+    <li><a href="<?= url('associations') ?>">Association_vehicule_conducteur</li>
+    <li><a href="<?= url('vehicules') ?>">Vehicule</li>
 </ul>
 
 
